@@ -15,9 +15,8 @@
 
     .container {
       position: relative;
-      max-width: 70%;
-      max-height: 70%;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+      max-width: 50%;  /* ↓ Smaller image */
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
     }
 
     .container img {
@@ -28,11 +27,11 @@
 
     .click-zone {
       position: absolute;
-      bottom: 30px; /* Adjust vertical position */
+      bottom: 25px;  /* Adjust to fine-tune button position */
       left: 50%;
       transform: translateX(-50%);
-      width: 200px;  /* Adjust width of clickable area */
-      height: 50px;  /* Adjust height */
+      width: 180px;
+      height: 45px;
       cursor: pointer;
     }
   </style>
@@ -40,8 +39,9 @@
 <body>
   <div class="container">
     <img src="beautiga.com.png" alt="Beautiga">
-    <a class="click-zone" href="mailto:kunal@brnd.ink" title="Enquire Now"></a>
+    <a class="click-zone" href="mailto:your@email.com" title="Enquire Now"></a>
   </div>
 </body>
 </html>
+
 
