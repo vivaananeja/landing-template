@@ -3,19 +3,32 @@
 <head>
   <title>Beautiga</title>
   <style>
-    body {
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
       margin: 0;
+      padding: 0;
+      height: 100%;
       background: #f2f2f2;
+      overflow: hidden; /* prevents scroll */
+      font-family: sans-serif;
+    }
+
+    .wrapper {
+      height: 100%;
+      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      position: relative;
       padding: 40px;
     }
 
     .container {
       position: relative;
-      width: 300px; /* Controls image size */
+      width: 450px;
       box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
     }
 
@@ -27,22 +40,37 @@
 
     .click-zone {
       position: absolute;
-      bottom: 20px;  /* How far from bottom of image */
+      bottom: 20px;
       left: 50%;
       transform: translateX(-50%);
-      width: 160px;   /* Width of invisible button */
-      height: 40px;   /* Height of invisible button */
+      width: 160px;
+      height: 40px;
       cursor: pointer;
       z-index: 10;
+    }
+
+    .logo {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      width: 60px; /* Adjust size of logo */
+      opacity: 0.8;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="beautiga.com.png" alt="Beautiga">
-    <a class="click-zone" href="mailto:kunal@brnd.ink" title="Enquire Now"></a>
+  <div class="wrapper">
+    <div class="container">
+      <img src="beautiga.com.png" alt="Beautiga">
+      <a class="click-zone" href="mailto:kunal@brnd.ink" title="Enquire Now"></a>
+    </div>
+    <a href="https://brnd.ink" target="_blank" title="brnd.ink">
+  <img class="logo" src="brnd.ink.png" alt="Logo">
+</a>
+
   </div>
 </body>
 </html>
+
 
 
