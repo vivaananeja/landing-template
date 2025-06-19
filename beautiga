@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Beautiga.com</title>
+  <title>Beautiga</title>
   <style>
     body {
       margin: 0;
@@ -18,6 +18,6 @@
   </style>
 </head>
 <body>
-  <img src="beautiga.com.png" alt="beautiga">
+  <img src="beautiga.com.png" alt="Beautiga">
 </body>
 </html>
