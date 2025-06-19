@@ -12,14 +12,36 @@
       height: 100vh;
       padding: 40px;
     }
-    img {
+
+    .container {
+      position: relative;
       max-width: 70%;
       max-height: 70%;
       box-shadow: 0 4px 16px rgba(0,0,0,0.05);
     }
+
+    .container img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .click-zone {
+      position: absolute;
+      bottom: 30px; /* Adjust vertical position */
+      left: 50%;
+      transform: translateX(-50%);
+      width: 200px;  /* Adjust width of clickable area */
+      height: 50px;  /* Adjust height */
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
-  <img src="beautiga.com.png" alt="Beautiga">
+  <div class="container">
+    <img src="beautiga.com.png" alt="Beautiga">
+    <a class="click-zone" href="mailto:your@email.com" title="Enquire Now"></a>
+  </div>
 </body>
 </html>
+
